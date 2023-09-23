@@ -16,6 +16,6 @@ public abstract class FIGURA implements Comparable<FIGURA>{
     // Método de comparación que compara dos figuras por su área
     // @return Un valor negativo si esta figura es menor, un valor positivo si es mayor, y 0 si son iguales.
     public int compareTo(FIGURA figura){
-        return (int) (figura.area()-this.area());
+        return (int) (this.area()-figura.area());
     }
 }
