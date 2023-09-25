@@ -5,7 +5,4 @@ public class QUADRAT extends RECTANGLE{
     public QUADRAT(double l1){
         super(l1,l1);  //Llama al constructor de la clase base (Figures.RECTANGLE) con los mismos lados para crear un cuadrado
     }
-    public int compareTo (FIGURA figura){
-        return super.compareTo(figura);
-    }
 }

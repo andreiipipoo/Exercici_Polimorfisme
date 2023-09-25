@@ -13,17 +13,18 @@ public class MAIN {
 
         //Se recoge el resultado del método suma en el gestor de figuras
         double res = GESTOR_FIGURES.suma(v);
-
-        System.out.println("Suma total: "+res);
-
-        //print(v);
-
         //Se llama al método sort en gestor de figuras (Éste ordena y muestra en pantalla el valor de las áres de forma
         //ordenada, en sentido ascendente)
-       GESTOR_FIGURES.sort(v);
+        GESTOR_FIGURES.sort(v);
 
+        //Imprimir info de las figures
+        System.out.println("Valor de las áreas en orden ascendente: ");
 
-        //print(v);
-
+        for(FIGURA figura : v){
+            String nombre = figura.getClass().getSimpleName();
+            double area = figura.area();
+            System.out.printf("Figura: %s -> Area: %.2f%n",nombre, area);
+        }
+        System.out.printf("SUMA TOTAL: %.3f%n", res);
     }
 }
